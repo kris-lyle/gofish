@@ -68,7 +68,7 @@
 		}
 
 		.logo-font {
-			font-family: 'Montserrat Subrayada', 'Montserrat', sans-serif;
+			font-family: 'Montserrat', sans-serif;
 			font-size: 1.7rem;
 		}
 
@@ -117,99 +117,7 @@
 			margin-bottom: 7%;
 		}
 
-		/* NOT USED
-		blockquote {
-			border-left-color: #ff6f00;
-		} */
-
-		/* BUTTON */
-
-		.btn-large {
-			border-color: #ef6c00;
-			border-width: 3px;
-			border-style: solid;
-			border-radius: 3px;
-			background-color: transparent;
-		}
-
-		.btn-large:focus, .btn-large:focus.active {
-  		background-color: #ef6c00;
-		}
-
-		.btn-large a:hover, .btn-large a.active {
-  		color: #fff;
-			background-color: #ef6c00;
-		}
-
-		.btn-large:hover {
-			background-color: #ef6c00;
-		}
-
-		/* TABS */
-
-		.tabs {
-			background-color: transparent !important;
-			height: inherit !important;
-		}
-
-		.tabs .tab {
-			font-weight: 600;
-			border-color: #ef6c00;
-			border-width: 3px;
-			border-style: solid;
-			border-radius: 3px;
-			margin: 10px;
-		}
-
-		.tabs .tab a {
-			color: #fff;
-		}
-
-		.tabs .tab a:focus, .tabs .tab a:focus.active {
-  		background-color: #ef6c00;
-		}
-
-		.tabs .tab a:hover, .tabs .tab a.active {
-  		color: #fff;
-			background-color: #ef6c00;
-		}
-
-		.tabs .indicator {
-			background-color: #ef6c00;
-		}
-
-		/* COLLAPSIBLE */
-
-		.collapsible-header {
-			font-size: 1.3rem !important;
-			position: relative;
-		}
-
-		/*
-		.collapsible-header:focus {
-			border-color: #1976d2;
-			border-width: 3px;
-			border-style: solid;
-			border-radius: 3px;
-		} */
-
-		.collapsible-body {
-			background-color: #fafafa;
-		}
-
 		/* BACKGROUNDS */
-
-		.hero-bg {
-			background: url("../img/KL_gradient_bg.jpg");
-			background-size: cover;
-			background-position: center;
-			min-height: 85vh;
-			width: 100%;
-			height: auto;
-			position: relative;
-			top: 0;
-			left: 0;
-		}
 
 		.blue-accent {
 			background: #1976d2;
@@ -233,31 +141,280 @@
 
 <!-- NAVBAR -->
 <div class="navbar-fixed">  
-  <nav class="grey darken-4">
+  <nav class="grey darken-1">
 		<div class="container">
 			
 			<div class="nav-wrapper">
 				<a href="#" class="logo-font center-align">Go Fish</a>
-
+				<ul class="right">
+					<li><a href="#"><i class="material-icons grey-darken-4 circle">add</i></a></li>
+				</ul>
 			</div>
 		</div>
   </nav>
 </div>        
-        
-<!--------------- HERO SECTION --------------->
 
-<section class="section valign-wrapper">
+
+<!-- back, family-health-insur, save --> 
+
+<section class="section blue lighten-4">
 	<div class="container">
+		<div class="row valign-wrapper">
+			<div class="col s12">
+				<div class="card-panel grey lighten-4 center">
+					<a class="black-text" href="#"><i class="material-icons medium grey lighten-2 circle">add</i>
+					<p>Add a New Report</p></a>
+				</div>
+			</div>
+		</div>
+
+<!-- New reports should always be based/build on historically processed trips. The following data should pre-populate the report: date, duration, and target fish. Information to be manually added includes: photos, ecological tags (moon phase), bait used, and description.
+
+There are thus two routes to creating a report:	1) from the "past trips" tab and 2) from the "post new report" button.
+
+Scenario 1: Past Trips
+
+Scenario 2: Post New Report
+a) select a trip (historical)
+b) provide description
+c) select metadata fields (ecology, bait, etc.)
+d) upload photos (select primary photo)
+
+Guide will need ability to a) create, b) edit, and c) save.
+-->
+
+		
+		<div class="row">
+			<div class="col s12">
+				<div class="card">
+					<div class="card-image">
+						<div class="carousel carousel-slider" style="height: 300px;">
+							<div class="caroursel-fixed-item">
+								<span class="card-title">FULL DAY | OFFSHORE</span>
+							</div>							
+							<div class="carousel-item red" href="#"></div>
+							<div class="carousel-item blue" href="#"></div>
+							<div class="carousel-item green" href="#"></div>
+							<div class="carousel-item black" href="#"></div>
+						</div>
+					</div>
+
+					<div class="card-tabs">
+						<ul class="tabs tabs-width-fixed">
+							<li class="tab">
+								<a href="#tab1" class="active">Target Fish</a>
+							</li>
+							<li class="tab">
+								<a href="#tab2" class="">Environment</a>
+							</li>
+							<li class="tab">
+								<a href="#tab3" class="">Bait</a>
+							</li>
+						<li class="indicator" style="right: 268px; left: 0px;"></li></ul>
+					</div>
+					<div class="card-content">
+						<div id="tab1" class="active" style="">
+							<div class="chip">Catfish</div>
+							<div class="chip">Sea Bass</div>
+							<div class="chip">Crappie</div>
+							<div class="chip">Ling Cod</div>
+							<div class="chip">Shark</div>
+						</div>
+						<div id="tab2" class="" style="display: none;">
+							<ul class="browser-default">
+								<li>Full Moon</li>
+								<li>High Tide</li>
+								<li>Spring</li>
+								<li>Bottom fishing</li>
+								<li>40 Miles out</li>
+							</ul>
+						</div>
+						<div id="tab3" class="" style="display: none;">
+							<ul class="browser-default">
+								<li>Minnows</li>
+								<li>Tuna Head</li>
+								<li>Stink Bait</li>
+								<li>Chum</li>
+							</ul>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--------------- MY BOOKINGS --------------->
+
+<section class="section grey lighten-4">
+	<div class="container">
+		<div class="row">
+			<div class="col s12">
+				<ul class="tabs">
+					<li class="tab col s4"><a href="#upcoming">Upcoming</a></li>
+					<li class="tab col s4"><a href="#past">Past</a></li>
+					<li class="tab col s4"><a href="#find">Find Trip</a></li>
+				</ul>
+			</div>
+
+			<!-- UPCOMING TRIPS TAB -->
+			<div id="upcoming" class="col s12">
+				<!-- CARD WITH TITLE -->
+				<div class="card">
+					<div class="card-content">
+						<a href="#" class="secondary-content">
+								<span class="new badge" data-badge-caption="PAID"></span>$450
+						</a>
+						<span class="card-title">11/12/1986</span>
+						<p>HALF DAY | BAY</p>
+						<p>Kristopher Lyle</p>
+						<p>555-555-5555</p>
+					</div>
+					<!-- ADD LINKS -->
+					<div class="card-action">
+						<a href="#">View Trip</a>
+						<a href="#">Post Report</a>
+					</div>
+				</div>
+				<!-- CARD WITH TITLE -->
+				<div class="card">
+					<div class="card-content">
+						<a href="#" class="secondary-content">
+							<span class="new badge" data-badge-caption="PENDING"></span>$780
+						</a>
+						<span class="card-title">02/05/1989</span>
+						<p>FULL DAY | OFFSHORE</p>
+						<p>Blake Binford</p>
+						<p>555-555-5555</p>
+					</div>
+					<!-- ADD LINKS -->
+					<div class="card-action">
+						<a href="#">View Trip</a>
+						<a href="#">Post Report</a>
+					</div>
+				</div>
+			</div>
+					
+			<!-- PAST TRIPS TAB -->
+			<div id="past" class="col s12">
+				<!-- CARD WITH TITLE -->
+				<div class="card">
+					<div class="card-content">
+						<a href="#" class="secondary-content">
+							<span class="new badge" data-badge-caption="PAID"></span>$1200
+						</a>
+						<span class="card-title">03/12/2018</span>
+						<p>FULL DAY | OFFSHORE</p>
+						<p>Sally Wick</p>
+						<p>555-555-5555</p>
+					</div>
+					<!-- ADD LINKS -->
+					<div class="card-action">
+						<a href="#">View Trip</a>
+						<a href="#">Post Report</a>
+					</div>
+				</div>
+				<!-- CARD WITH TITLE -->
+				<div class="card">
+					<div class="card-content">
+						<a href="#" class="secondary-content">
+							<span class="new badge" data-badge-caption="PAID"></span>$780
+						</a>
+						<span class="card-title">05/08/2007</span>
+						<p>FULL DAY | BAY</p>
+						<p>Berry Satchel</p>
+						<p>555-555-5555</p>
+					</div>
+					<!-- ADD LINKS -->
+					<div class="card-action">
+						<a href="#">View Trip</a>
+						<a href="#">Post Report</a>
+					</div>
+				</div>
+				<!-- CARD WITH TITLE -->
+				<div class="card">
+					<div class="card-content">
+						<a href="#" class="secondary-content">
+							<span class="new badge" data-badge-caption="PAID"></span>$780
+						</a>
+						<span class="card-title">05/08/2007</span>
+						<p>FULL DAY | BAY</p>
+						<p>Berry Satchel</p>
+						<p>555-555-5555</p>
+					</div>
+					<!-- ADD LINKS -->
+					<div class="card-action">
+						<a href="#">View Trip</a>
+						<a href="#">Post Report</a>
+					</div>
+				</div>
+			</div>
+			<!-- FIND TRIPS TAB -->			
+			<div id="find" class="col s12">
+				<h4>Find a Trip</h4>
+				<div class="input-field">
+					<input id="tripDate" type="text" />
+					<label for="tripDate">Trip Date</label>
+				</div>
+				<div class="input-field">
+					<input id="lastName" type="text" />
+					<label for="lastName">Last Name</label>
+				</div>
+				<a class="waves-effect waves-light btn-large"><i class="material-icons left">search</i>Search</a>
+			</div>
+		
+		</div>
 	  
 	</div>
 </section>
-  
-<!--------------- SWIPEABLE TAB SECTION --------------->
+
+<!--------------- BOOK A TRIP --------------->
+
+<section class="section blue lighten-4">
+	<div class="container">
+		<div class="row">
+			<div class="col s12 grey lighten-4">
+				<h3>Trip Details</h3>
+			<form>
+				<!-- Location -->
+				<div class="input-field">
+					<select>
+						<optgroup label="Bay">
+							<option value="1">Half Day</option>
+							<option value="2">Full Day</option>
+						</optgroup>
+						<optgroup label="Offshore">
+							<option value="3">Full Day</option>
+						</optgroup>
+					</select>
+					<label>Pick a Trip</label>
+				</div>
+
+			</form>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+
+	
+<!--------------- TOOLBAR --------------->
 
 <section class="section valign-wrapper">
 	<div class="container">
 		<div class="row">	
-
+			<div class="fixed-action-btn toolbar">
+				<a class="btn-floating btn-large red">
+					<i class="large material-icons">mode_edit</i>
+				</a>
+				<ul>
+					<li><a class="btn-floating"><i class="material-icons">event</i>Bookings</a></li>
+					<li><a class="btn-floating"><i class="material-icons">edit</i><Reports></a></li>
+					<li><a class="btn-floating"><i class="material-icons">attach_money</i>Finances</a></li>
+					<li><a class="btn-floating"><i class="material-icons">account_circle</i>Profile</a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </section>
@@ -276,59 +433,31 @@
 
 <script>
 
-	$var (".dropdown-trigger").dropdown();
-
-  $(document).ready(function(){
-    $('.collapsible').collapsible({
-
-		});
+$(document).ready(function(){
+	$('.fixed-action-btn').floatingActionButton({
+    toolbarEnabled: true
   });
-
 
 	$(document).ready(function(){
-    $('#solution-swipe').tabs({
-      swipeable : true,
-      responsiveThreshold : 1920
-    });
-  });
+    $('.carousel').carousel();
+	});
+	
+  $('.carousel.carousel-slider').carousel({
+    fullWidth: true,
+    indicators: true
+	});
+	
+	$('select').material_select();
 
-// SLOW ANCHOR LINK SCROLLING 
-// Select all links with hashes
-    $('a[href*="#"]')
-		// Remove links that don't actually link to anything
-		.not('[href="#"]')
-		.not('[href="#0"]')
-		.click(function(event) {
-			// On-page links
-			if (
-				location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-				&& 
-				location.hostname == this.hostname
-			) {
-				// Figure out element to scroll to
-				var target = $(this.hash);
-				target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-				// Does a scroll target exist?
-				if (target.length) {
-					// Only prevent default if animation is actually gonna happen
-					event.preventDefault();
-					$('html, body').animate({
-						scrollTop: target.offset().top
-					}, 1000, function() {
-						// Callback after animation
-						// Must change focus!
-						var $target = $(target);
-						$target.focus();
-						if ($target.is(":focus")) { // Checking if the target was focused
-							return false;
-						} else {
-							$target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-							$target.focus(); // Set focus again
-						};
-					});
-				}
-			}
-		});
+			
+	$(document).ready(function(){
+    $('.datepicker').datepicker();
+	});
+	
+	$(document).ready(function(){
+    $('select').formSelect();
+  });
+        
 		
 </script>
 

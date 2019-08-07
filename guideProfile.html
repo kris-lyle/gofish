@@ -1,26 +1,40 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!--Import Google Icon Font-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <!--Import materialize.css-->
+
     <link
-      type="text/css"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       rel="stylesheet"
-      href="css/materialize.min.css"
-      media="screen,projection"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
     />
 
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300, 400, 500, 600,700"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <style>
       .card-title {
-        background-color: #bdbdbd;
-        background: rgba(0, 0, 0, 0.5);
       }
 
       .card .card-image .card-title {
@@ -43,7 +57,7 @@
         min-width: 100%;
         max-height: 30%;
         padding: 15px;
-        font-size: 40px;
+        font-size: 30px;
       }
 
       .card .card-image .card-title .details-font-left {
@@ -55,7 +69,7 @@
         max-height: 30%;
         padding: 24px;
         font-size: 16px;
-        font-weight: 300;
+        font-weight: 500;
       }
 
       .card .card-image .card-title .details-font-right-1 {
@@ -67,6 +81,7 @@
         max-height: 30%;
         padding: 24px;
         font-size: 14px;
+        font-weight: 500;
       }
 
       .card .card-image .card-title .details-font-right-2 {
@@ -78,6 +93,7 @@
         max-height: 30%;
         padding: 24px;
         font-size: 14px;
+        font-weight: 500;
       }
 
       mark {
@@ -150,7 +166,9 @@
               >
             </div>
             <div class="card-reveal">
-              <h5>Description<i class="material-icons right">close</i></h5>
+              <span class="card-title"
+                >Description<i class="material-icons right">close</i></span
+              >
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
                 dicta quia ipsa culpa cumque odio praesentium neque sit, aperiam
@@ -200,8 +218,10 @@
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- CREATE PACKAGE -->
+    <!-- CREATE PACKAGE -->
+    <div class="container">
       <div class="row">
         <form class="col s12 m8 offset-m2">
           <!-- Location -->
@@ -297,27 +317,27 @@
           <!-- Boat Specs -->
           <div class="col s12">
             <h5>Boat Specs</h5>
-            Length
+            <br />Length
             <div class="input-field inline">
               <input id="boat_length" type="text" />
               <label for="boat_length">ft</label>
             </div>
-            Capacity
+            <br />Capacity
             <div class="input-field inline">
               <input id="boat_capacity" type="text" />
               <label for="boat_capacity">#</label>
             </div>
-            Year
+            <br />Year
             <div class="input-field inline">
               <input id="boat_year" type="text" />
               <label for="boat_year">20XX</label>
             </div>
-            Engines
+            <br />Engines
             <div class="input-field inline">
               <input id="boat_engines" type="text" />
               <label for="boat_engines">#</label>
             </div>
-            Horsepower
+            <br />Horsepower
             <div class="input-field inline">
               <input id="boat_horsepower" type="text" />
               <label for="boat_horsepower">HP</label>
@@ -329,37 +349,37 @@
             <h5>Trip Includes:</h5>
             <p>
               <label>
-                <input type="checkbox" class="filled-in" checked="checked" />
+                <input type="checkbox" class="filled-in" />
                 <span>Catch & cleaning</span>
               </label>
             </p>
             <p>
               <label>
-                <input type="checkbox" class="filled-in" checked="checked" />
+                <input type="checkbox" class="filled-in" />
                 <span>Fresh / live bait</span>
               </label>
             </p>
             <p>
               <label>
-                <input type="checkbox" class="filled-in" checked="checked" />
+                <input type="checkbox" class="filled-in" />
                 <span>Lures</span>
               </label>
             </p>
             <p>
               <label>
-                <input type="checkbox" class="filled-in" checked="checked" />
+                <input type="checkbox" class="filled-in" />
                 <span>Rod & reels</span>
               </label>
             </p>
             <p>
               <label>
-                <input type="checkbox" class="filled-in" checked="checked" />
+                <input type="checkbox" class="filled-in" />
                 <span>Gas</span>
               </label>
             </p>
             <p>
               <label>
-                <input type="checkbox" class="filled-in" checked="checked" />
+                <input type="checkbox" class="filled-in" />
                 <span>Icechest & ice</span>
               </label>
             </p>
@@ -370,37 +390,37 @@
             <h5>Amenities:</h5>
             <p>
               <label>
-                <input type="checkbox" class="filled-in" checked="checked" />
+                <input type="checkbox" class="filled-in" />
                 <span>Casting platform</span>
               </label>
             </p>
             <p>
               <label>
-                <input type="checkbox" class="filled-in" checked="checked" />
+                <input type="checkbox" class="filled-in" />
                 <span>Reel seat</span>
               </label>
             </p>
             <p>
               <label>
-                <input type="checkbox" class="filled-in" checked="checked" />
+                <input type="checkbox" class="filled-in" />
                 <span>Livewell</span>
               </label>
             </p>
             <p>
               <label>
-                <input type="checkbox" class="filled-in" checked="checked" />
+                <input type="checkbox" class="filled-in" />
                 <span>Shade</span>
               </label>
             </p>
             <p>
               <label>
-                <input type="checkbox" class="filled-in" checked="checked" />
+                <input type="checkbox" class="filled-in" />
                 <span>Bathroom</span>
               </label>
             </p>
             <p>
               <label>
-                <input type="checkbox" class="filled-in" checked="checked" />
+                <input type="checkbox" class="filled-in" />
                 <span>Enclosed cabin</span>
               </label>
             </p>
@@ -411,37 +431,37 @@
             <h5>Fishing Techniques:</h5>
             <p>
               <label>
-                <input type="checkbox" class="filled-in" checked="checked" />
+                <input type="checkbox" class="filled-in" />
                 <span>Jigging</span>
               </label>
             </p>
             <p>
               <label>
-                <input type="checkbox" class="filled-in" checked="checked" />
+                <input type="checkbox" class="filled-in" />
                 <span>Trolling</span>
               </label>
             </p>
             <p>
               <label>
-                <input type="checkbox" class="filled-in" checked="checked" />
+                <input type="checkbox" class="filled-in" />
                 <span>Spear fishing</span>
               </label>
             </p>
             <p>
               <label>
-                <input type="checkbox" class="filled-in" checked="checked" />
+                <input type="checkbox" class="filled-in" />
                 <span>Netting</span>
               </label>
             </p>
             <p>
               <label>
-                <input type="checkbox" class="filled-in" checked="checked" />
+                <input type="checkbox" class="filled-in" />
                 <span>Bow fishing</span>
               </label>
             </p>
             <p>
               <label>
-                <input type="checkbox" class="filled-in" checked="checked" />
+                <input type="checkbox" class="filled-in" />
                 <span>Fly fishing</span>
               </label>
             </p>
